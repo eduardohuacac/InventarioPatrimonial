@@ -60,7 +60,7 @@ class FlujosWebTest extends TestCase
             'descripcion' => 'Pizarra interactiva',
             'ambiente_id' => Ambiente::first()->id,
             'responsable_id' => Personal::first()->id,
-            'estado_id' => 1,
+            'estado_id' => \App\Models\EstadoConservacion::where('nombre', 'bueno')->value('id'),
             'fecha_ultima_verificacion' => today()->toDateString(),
         ]);
         $r->assertRedirect('/bienes/952282850099');
