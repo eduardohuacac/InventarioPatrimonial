@@ -1,0 +1,1492 @@
+{
+    "resumen": {
+        "archivos": 69,
+        "clases": 69,
+        "metodos": 246,
+        "loc": 2964,
+        "cc_promedio": 2.14,
+        "cc_maxima": 46,
+        "metodos_cc_hasta_10": 241,
+        "metodos_cc_11_a_20": 4,
+        "metodos_cc_mayor_20": 1,
+        "porcentaje_aceptable": 98
+    },
+    "metodos": [
+        {
+            "archivo": "app/Services/Importacion/DiagnosticoDepuracion.php",
+            "metodo": "DiagnosticoDepuracion::diagnosticar",
+            "cc": 46,
+            "loc": 130
+        },
+        {
+            "archivo": "app/Services/Reportes/GeneradorReporte.php",
+            "metodo": "GeneradorReporte::generar",
+            "cc": 20,
+            "loc": 63
+        },
+        {
+            "archivo": "app/Services/Importacion/ImportadorDepurados.php",
+            "metodo": "ImportadorDepurados::importar",
+            "cc": 13,
+            "loc": 82
+        },
+        {
+            "archivo": "app/Enums/TipoMovimiento.php",
+            "metodo": "TipoMovimiento::etiqueta",
+            "cc": 11,
+            "loc": 14
+        },
+        {
+            "archivo": "app/Domain/Movimientos/FabricaHandlers.php",
+            "metodo": "FabricaHandlers::para",
+            "cc": 11,
+            "loc": 14
+        },
+        {
+            "archivo": "app/Enums/TipoDocumento.php",
+            "metodo": "TipoDocumento::etiqueta",
+            "cc": 10,
+            "loc": 13
+        },
+        {
+            "archivo": "app/Services/RegistroBienService.php",
+            "metodo": "RegistroBienService::registrar",
+            "cc": 9,
+            "loc": 45
+        },
+        {
+            "archivo": "app/Services/Importacion/LectorArchivo.php",
+            "metodo": "LectorArchivo::leer",
+            "cc": 9,
+            "loc": 39
+        },
+        {
+            "archivo": "app/Http/Controllers/BienController.php",
+            "metodo": "BienController::index",
+            "cc": 9,
+            "loc": 28
+        },
+        {
+            "archivo": "app/Services/Importacion/LectorArchivo.php",
+            "metodo": "LectorArchivo::fecha",
+            "cc": 8,
+            "loc": 17
+        },
+        {
+            "archivo": "app/Domain/Movimientos/SituacionBien.php",
+            "metodo": "SituacionBien::con",
+            "cc": 7,
+            "loc": 10
+        },
+        {
+            "archivo": "app/Enums/Situacion.php",
+            "metodo": "Situacion::etiqueta",
+            "cc": 6,
+            "loc": 9
+        },
+        {
+            "archivo": "app/Enums/Situacion.php",
+            "metodo": "Situacion::claseCss",
+            "cc": 6,
+            "loc": 9
+        },
+        {
+            "archivo": "app/Support/Auditor.php",
+            "metodo": "Auditor::registrar",
+            "cc": 6,
+            "loc": 11
+        },
+        {
+            "archivo": "app/Services/Reportes/GeneradorReporte.php",
+            "metodo": "GeneradorReporte::aplicarFiltros",
+            "cc": 6,
+            "loc": 16
+        },
+        {
+            "archivo": "app/Enums/Perfil.php",
+            "metodo": "Perfil::etiqueta",
+            "cc": 5,
+            "loc": 8
+        },
+        {
+            "archivo": "app/Services/RegistroMovimientoService.php",
+            "metodo": "RegistroMovimientoService::registrar",
+            "cc": 5,
+            "loc": 47
+        },
+        {
+            "archivo": "app/Services/RegistroMovimientoService.php",
+            "metodo": "RegistroMovimientoService::asegurarCorregible",
+            "cc": 5,
+            "loc": 16
+        },
+        {
+            "archivo": "app/Services/RegistroMovimientoService.php",
+            "metodo": "RegistroMovimientoService::resolverDocumento",
+            "cc": 5,
+            "loc": 17
+        },
+        {
+            "archivo": "app/Domain/Movimientos/ProyectorSituacion.php",
+            "metodo": "ProyectorSituacion::proyectar",
+            "cc": 5,
+            "loc": 20
+        },
+        {
+            "archivo": "app/Http/Controllers/AuditoriaController.php",
+            "metodo": "AuditoriaController::__invoke",
+            "cc": 5,
+            "loc": 22
+        },
+        {
+            "archivo": "app/Http/Controllers/DocumentoController.php",
+            "metodo": "DocumentoController::archivo",
+            "cc": 5,
+            "loc": 9
+        },
+        {
+            "archivo": "app/Models/User.php",
+            "metodo": "User::tienePerfil",
+            "cc": 4,
+            "loc": 10
+        },
+        {
+            "archivo": "app/Services/Reportes/ExportadorExcel.php",
+            "metodo": "ExportadorExcel::exportar",
+            "cc": 4,
+            "loc": 32
+        },
+        {
+            "archivo": "app/Services/Reportes/GeneradorReporte.php",
+            "metodo": "GeneradorReporte::subtitulo",
+            "cc": 4,
+            "loc": 7
+        },
+        {
+            "archivo": "app/Services/RegistroMovimientoService.php",
+            "metodo": "RegistroMovimientoService::decidir",
+            "cc": 4,
+            "loc": 29
+        },
+        {
+            "archivo": "app/Services/RegistroMovimientoService.php",
+            "metodo": "RegistroMovimientoService::validar",
+            "cc": 4,
+            "loc": 26
+        },
+        {
+            "archivo": "app/Services/Importacion/DiagnosticoDepuracion.php",
+            "metodo": "DiagnosticoDepuracion::seCargaria",
+            "cc": 4,
+            "loc": 8
+        },
+        {
+            "archivo": "app/Services/Importacion/DiagnosticoDepuracion.php",
+            "metodo": "DiagnosticoDepuracion::fechaValida",
+            "cc": 4,
+            "loc": 8
+        },
+        {
+            "archivo": "app/Services/Importacion/LectorArchivo.php",
+            "metodo": "LectorArchivo::limpiar",
+            "cc": 4,
+            "loc": 11
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/VerificacionHandler.php",
+            "metodo": "VerificacionHandler::construir",
+            "cc": 4,
+            "loc": 12
+        },
+        {
+            "archivo": "app/Http/Controllers/Admin/UsuarioController.php",
+            "metodo": "UsuarioController::update",
+            "cc": 4,
+            "loc": 10
+        },
+        {
+            "archivo": "app/Http/Controllers/Admin/PersonalController.php",
+            "metodo": "PersonalController::update",
+            "cc": 4,
+            "loc": 9
+        },
+        {
+            "archivo": "app/Http/Controllers/ImportacionController.php",
+            "metodo": "ImportacionController::previsualizar",
+            "cc": 4,
+            "loc": 34
+        },
+        {
+            "archivo": "app/Http/Controllers/PanelController.php",
+            "metodo": "PanelController::__invoke",
+            "cc": 4,
+            "loc": 33
+        },
+        {
+            "archivo": "app/Models/Bien.php",
+            "metodo": "Bien::prestamoVencido",
+            "cc": 3,
+            "loc": 5
+        },
+        {
+            "archivo": "app/Models/Movimiento.php",
+            "metodo": "Movimiento::estadoAprobacion",
+            "cc": 3,
+            "loc": 7
+        },
+        {
+            "archivo": "app/Providers/AppServiceProvider.php",
+            "metodo": "AppServiceProvider::boot",
+            "cc": 3,
+            "loc": 20
+        },
+        {
+            "archivo": "app/Services/Alertas.php",
+            "metodo": "Alertas::ultimoCierre",
+            "cc": 3,
+            "loc": 6
+        },
+        {
+            "archivo": "app/Services/Importacion/DiagnosticoDepuracion.php",
+            "metodo": "DiagnosticoDepuracion::buscarPersona",
+            "cc": 3,
+            "loc": 6
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/VerificacionHandler.php",
+            "metodo": "VerificacionHandler::aplicar",
+            "cc": 3,
+            "loc": 12
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/RegistroHandler.php",
+            "metodo": "RegistroHandler::construir",
+            "cc": 3,
+            "loc": 9
+        },
+        {
+            "archivo": "app/Http/Controllers/Auth/LoginController.php",
+            "metodo": "LoginController::ingresar",
+            "cc": 3,
+            "loc": 24
+        },
+        {
+            "archivo": "app/Http/Controllers/ImportacionController.php",
+            "metodo": "ImportacionController::confirmar",
+            "cc": 3,
+            "loc": 11
+        },
+        {
+            "archivo": "app/Http/Controllers/ReporteController.php",
+            "metodo": "ReporteController::exportar",
+            "cc": 3,
+            "loc": 20
+        },
+        {
+            "archivo": "app/Http/Middleware/EnsureUsuarioActivo.php",
+            "metodo": "EnsureUsuarioActivo::handle",
+            "cc": 3,
+            "loc": 11
+        },
+        {
+            "archivo": "app/Policies/BienPolicy.php",
+            "metodo": "BienPolicy::view",
+            "cc": 3,
+            "loc": 4
+        },
+        {
+            "archivo": "app/Models/Bien.php",
+            "metodo": "Bien::scopeBuscar",
+            "cc": 2,
+            "loc": 12
+        },
+        {
+            "archivo": "app/Models/Concerns/Auditable.php",
+            "metodo": "Auditable::bootAuditable",
+            "cc": 2,
+            "loc": 18
+        },
+        {
+            "archivo": "app/Models/Personal.php",
+            "metodo": "Personal::dniEnmascarado",
+            "cc": 2,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Services/Indicadores.php",
+            "metodo": "Indicadores::calcular",
+            "cc": 2,
+            "loc": 40
+        },
+        {
+            "archivo": "app/Services/RegistroMovimientoService.php",
+            "metodo": "RegistroMovimientoService::registrarCorreccion",
+            "cc": 2,
+            "loc": 30
+        },
+        {
+            "archivo": "app/Services/Importacion/DiagnosticoDepuracion.php",
+            "metodo": "DiagnosticoDepuracion::resumen",
+            "cc": 2,
+            "loc": 25
+        },
+        {
+            "archivo": "app/Services/Importacion/LectorArchivo.php",
+            "metodo": "LectorArchivo::detectarDelimitador",
+            "cc": 2,
+            "loc": 5
+        },
+        {
+            "archivo": "app/Services/Importacion/PlantillaImportacion.php",
+            "metodo": "PlantillaImportacion::generar",
+            "cc": 2,
+            "loc": 40
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/BajaHandler.php",
+            "metodo": "BajaHandler::validarContexto",
+            "cc": 2,
+            "loc": 7
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/PrestamoHandler.php",
+            "metodo": "PrestamoHandler::construir",
+            "cc": 2,
+            "loc": 10
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/DevolucionHandler.php",
+            "metodo": "DevolucionHandler::construir",
+            "cc": 2,
+            "loc": 10
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/AsignacionHandler.php",
+            "metodo": "AsignacionHandler::validarContexto",
+            "cc": 2,
+            "loc": 7
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/RegistroHandler.php",
+            "metodo": "RegistroHandler::aplicar",
+            "cc": 2,
+            "loc": 9
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/HandlerBase.php",
+            "metodo": "HandlerBase::fecha",
+            "cc": 2,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/HandlerBase.php",
+            "metodo": "HandlerBase::exigir",
+            "cc": 2,
+            "loc": 5
+        },
+        {
+            "archivo": "app/Http/Controllers/CorreccionController.php",
+            "metodo": "CorreccionController::create",
+            "cc": 2,
+            "loc": 15
+        },
+        {
+            "archivo": "app/Http/Controllers/BienController.php",
+            "metodo": "BienController::show",
+            "cc": 2,
+            "loc": 18
+        },
+        {
+            "archivo": "app/Http/Controllers/AprobacionController.php",
+            "metodo": "AprobacionController::index",
+            "cc": 2,
+            "loc": 10
+        },
+        {
+            "archivo": "app/Http/Controllers/AprobacionController.php",
+            "metodo": "AprobacionController::decidir",
+            "cc": 2,
+            "loc": 10
+        },
+        {
+            "archivo": "app/Http/Controllers/Admin/UsuarioController.php",
+            "metodo": "UsuarioController::validar",
+            "cc": 2,
+            "loc": 12
+        },
+        {
+            "archivo": "app/Http/Controllers/MisBienesController.php",
+            "metodo": "MisBienesController::__invoke",
+            "cc": 2,
+            "loc": 10
+        },
+        {
+            "archivo": "app/Http/Controllers/MovimientoController.php",
+            "metodo": "MovimientoController::create",
+            "cc": 2,
+            "loc": 20
+        },
+        {
+            "archivo": "app/Http/Controllers/MovimientoController.php",
+            "metodo": "MovimientoController::store",
+            "cc": 2,
+            "loc": 10
+        },
+        {
+            "archivo": "app/Http/Controllers/MovimientoController.php",
+            "metodo": "MovimientoController::tipo",
+            "cc": 2,
+            "loc": 6
+        },
+        {
+            "archivo": "app/Http/Controllers/ReporteController.php",
+            "metodo": "ReporteController::index",
+            "cc": 2,
+            "loc": 14
+        },
+        {
+            "archivo": "app/Http/Middleware/SecurityHeaders.php",
+            "metodo": "SecurityHeaders::handle",
+            "cc": 2,
+            "loc": 13
+        },
+        {
+            "archivo": "app/Http/Middleware/EnsurePerfil.php",
+            "metodo": "EnsurePerfil::handle",
+            "cc": 2,
+            "loc": 6
+        },
+        {
+            "archivo": "app/Exceptions/ReglaNegocioException.php",
+            "metodo": "ReglaNegocioException::en",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Enums/TipoMovimiento.php",
+            "metodo": "TipoMovimiento::registrables",
+            "cc": 1,
+            "loc": 6
+        },
+        {
+            "archivo": "app/Models/BitacoraMigracion.php",
+            "metodo": "BitacoraMigracion::casts",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/BitacoraMigracion.php",
+            "metodo": "BitacoraMigracion::bien",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Auditoria.php",
+            "metodo": "Auditoria::casts",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Auditoria.php",
+            "metodo": "Auditoria::usuario",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Bien.php",
+            "metodo": "Bien::casts",
+            "cc": 1,
+            "loc": 8
+        },
+        {
+            "archivo": "app/Models/Bien.php",
+            "metodo": "Bien::getRouteKeyName",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Bien.php",
+            "metodo": "Bien::ambiente",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Bien.php",
+            "metodo": "Bien::responsable",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Bien.php",
+            "metodo": "Bien::estado",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Bien.php",
+            "metodo": "Bien::creador",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Bien.php",
+            "metodo": "Bien::movimientos",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/User.php",
+            "metodo": "User::casts",
+            "cc": 1,
+            "loc": 8
+        },
+        {
+            "archivo": "app/Models/User.php",
+            "metodo": "User::personal",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/User.php",
+            "metodo": "User::esEncargado",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/User.php",
+            "metodo": "User::esDirector",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/User.php",
+            "metodo": "User::esAdmin",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/User.php",
+            "metodo": "User::veTodosLosBienes",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Concerns/Auditable.php",
+            "metodo": "Auditable::datosAuditables",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Concerns/SoloInsercion.php",
+            "metodo": "SoloInsercion::bootSoloInsercion",
+            "cc": 1,
+            "loc": 9
+        },
+        {
+            "archivo": "app/Models/EstadoConservacion.php",
+            "metodo": "EstadoConservacion::ordenados",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Personal.php",
+            "metodo": "Personal::casts",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Personal.php",
+            "metodo": "Personal::bienes",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Personal.php",
+            "metodo": "Personal::scopeActivos",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/LoteImportacion.php",
+            "metodo": "LoteImportacion::casts",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/LoteImportacion.php",
+            "metodo": "LoteImportacion::bitacora",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/LoteImportacion.php",
+            "metodo": "LoteImportacion::usuario",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/LoteImportacion.php",
+            "metodo": "LoteImportacion::cargadosEsperados",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/LoteImportacion.php",
+            "metodo": "LoteImportacion::cuadra",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Ambiente.php",
+            "metodo": "Ambiente::casts",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Ambiente.php",
+            "metodo": "Ambiente::bienes",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Ambiente.php",
+            "metodo": "Ambiente::scopeActivos",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Documento.php",
+            "metodo": "Documento::casts",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Documento.php",
+            "metodo": "Documento::movimientos",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Documento.php",
+            "metodo": "Documento::rotulo",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Movimiento.php",
+            "metodo": "Movimiento::casts",
+            "cc": 1,
+            "loc": 10
+        },
+        {
+            "archivo": "app/Models/Movimiento.php",
+            "metodo": "Movimiento::bien",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Movimiento.php",
+            "metodo": "Movimiento::ambienteOrigen",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Movimiento.php",
+            "metodo": "Movimiento::ambienteDestino",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Movimiento.php",
+            "metodo": "Movimiento::responsableAnterior",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Movimiento.php",
+            "metodo": "Movimiento::responsableNuevo",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Movimiento.php",
+            "metodo": "Movimiento::estado",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Movimiento.php",
+            "metodo": "Movimiento::documento",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Movimiento.php",
+            "metodo": "Movimiento::registrador",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Movimiento.php",
+            "metodo": "Movimiento::anulado",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Movimiento.php",
+            "metodo": "Movimiento::aprobacion",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Movimiento.php",
+            "metodo": "Movimiento::correcciones",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Movimiento.php",
+            "metodo": "Movimiento::estaPendiente",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Movimiento.php",
+            "metodo": "Movimiento::estaAnulado",
+            "cc": 1,
+            "loc": 4
+        },
+        {
+            "archivo": "app/Models/Movimiento.php",
+            "metodo": "Movimiento::scopePendientesDeAprobacion",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Aprobacion.php",
+            "metodo": "Aprobacion::casts",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Aprobacion.php",
+            "metodo": "Aprobacion::movimiento",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Models/Aprobacion.php",
+            "metodo": "Aprobacion::director",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Providers/AppServiceProvider.php",
+            "metodo": "AppServiceProvider::register",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Services/Alertas.php",
+            "metodo": "Alertas::prestamosVencidos",
+            "cc": 1,
+            "loc": 6
+        },
+        {
+            "archivo": "app/Services/Alertas.php",
+            "metodo": "Alertas::sinVerificacionReciente",
+            "cc": 1,
+            "loc": 6
+        },
+        {
+            "archivo": "app/Services/Alertas.php",
+            "metodo": "Alertas::noUbicados",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Services/Reportes/GeneradorReporte.php",
+            "metodo": "GeneradorReporte::__construct",
+            "cc": 1,
+            "loc": 2
+        },
+        {
+            "archivo": "app/Services/RegistroMovimientoService.php",
+            "metodo": "RegistroMovimientoService::__construct",
+            "cc": 1,
+            "loc": 4
+        },
+        {
+            "archivo": "app/Services/RegistroMovimientoService.php",
+            "metodo": "RegistroMovimientoService::posteriores",
+            "cc": 1,
+            "loc": 10
+        },
+        {
+            "archivo": "app/Services/RegistroMovimientoService.php",
+            "metodo": "RegistroMovimientoService::solicitudDeBajaAprobada",
+            "cc": 1,
+            "loc": 9
+        },
+        {
+            "archivo": "app/Services/RegistroBienService.php",
+            "metodo": "RegistroBienService::__construct",
+            "cc": 1,
+            "loc": 2
+        },
+        {
+            "archivo": "app/Services/RegistroBienService.php",
+            "metodo": "RegistroBienService::reglas",
+            "cc": 1,
+            "loc": 17
+        },
+        {
+            "archivo": "app/Services/RegistroBienService.php",
+            "metodo": "RegistroBienService::mensajes",
+            "cc": 1,
+            "loc": 10
+        },
+        {
+            "archivo": "app/Services/Importacion/DiagnosticoDepuracion.php",
+            "metodo": "DiagnosticoDepuracion::marcasDeArchivo",
+            "cc": 1,
+            "loc": 5
+        },
+        {
+            "archivo": "app/Services/Importacion/LectorArchivo.php",
+            "metodo": "LectorArchivo::normalizarEncabezado",
+            "cc": 1,
+            "loc": 6
+        },
+        {
+            "archivo": "app/Services/Importacion/ImportadorDepurados.php",
+            "metodo": "ImportadorDepurados::__construct",
+            "cc": 1,
+            "loc": 4
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/CorreccionHandler.php",
+            "metodo": "CorreccionHandler::tipo",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/CorreccionHandler.php",
+            "metodo": "CorreccionHandler::situacionesPermitidas",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/CorreccionHandler.php",
+            "metodo": "CorreccionHandler::documentosAceptados",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/CorreccionHandler.php",
+            "metodo": "CorreccionHandler::documentoObligatorio",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/CorreccionHandler.php",
+            "metodo": "CorreccionHandler::requiereAprobacion",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/CorreccionHandler.php",
+            "metodo": "CorreccionHandler::reglas",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/CorreccionHandler.php",
+            "metodo": "CorreccionHandler::construir",
+            "cc": 1,
+            "loc": 6
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/CorreccionHandler.php",
+            "metodo": "CorreccionHandler::seAplica",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/CorreccionHandler.php",
+            "metodo": "CorreccionHandler::aplicar",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/TrasladoHandler.php",
+            "metodo": "TrasladoHandler::tipo",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/TrasladoHandler.php",
+            "metodo": "TrasladoHandler::situacionesPermitidas",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/TrasladoHandler.php",
+            "metodo": "TrasladoHandler::documentosAceptados",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/TrasladoHandler.php",
+            "metodo": "TrasladoHandler::reglas",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/TrasladoHandler.php",
+            "metodo": "TrasladoHandler::validarContexto",
+            "cc": 1,
+            "loc": 7
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/TrasladoHandler.php",
+            "metodo": "TrasladoHandler::construir",
+            "cc": 1,
+            "loc": 9
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/TrasladoHandler.php",
+            "metodo": "TrasladoHandler::aplicar",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/SolicitudBajaHandler.php",
+            "metodo": "SolicitudBajaHandler::tipo",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/SolicitudBajaHandler.php",
+            "metodo": "SolicitudBajaHandler::situacionesPermitidas",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/SolicitudBajaHandler.php",
+            "metodo": "SolicitudBajaHandler::documentosAceptados",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/SolicitudBajaHandler.php",
+            "metodo": "SolicitudBajaHandler::requiereAprobacion",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/SolicitudBajaHandler.php",
+            "metodo": "SolicitudBajaHandler::reglas",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/SolicitudBajaHandler.php",
+            "metodo": "SolicitudBajaHandler::construir",
+            "cc": 1,
+            "loc": 8
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/SolicitudBajaHandler.php",
+            "metodo": "SolicitudBajaHandler::seAplica",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/SolicitudBajaHandler.php",
+            "metodo": "SolicitudBajaHandler::aplicar",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/VerificacionHandler.php",
+            "metodo": "VerificacionHandler::tipo",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/VerificacionHandler.php",
+            "metodo": "VerificacionHandler::situacionesPermitidas",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/VerificacionHandler.php",
+            "metodo": "VerificacionHandler::documentosAceptados",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/VerificacionHandler.php",
+            "metodo": "VerificacionHandler::reglas",
+            "cc": 1,
+            "loc": 7
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/BajaHandler.php",
+            "metodo": "BajaHandler::tipo",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/BajaHandler.php",
+            "metodo": "BajaHandler::situacionesPermitidas",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/BajaHandler.php",
+            "metodo": "BajaHandler::documentosAceptados",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/BajaHandler.php",
+            "metodo": "BajaHandler::construir",
+            "cc": 1,
+            "loc": 7
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/BajaHandler.php",
+            "metodo": "BajaHandler::aplicar",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/PrestamoHandler.php",
+            "metodo": "PrestamoHandler::tipo",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/PrestamoHandler.php",
+            "metodo": "PrestamoHandler::situacionesPermitidas",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/PrestamoHandler.php",
+            "metodo": "PrestamoHandler::documentosAceptados",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/PrestamoHandler.php",
+            "metodo": "PrestamoHandler::reglas",
+            "cc": 1,
+            "loc": 7
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/PrestamoHandler.php",
+            "metodo": "PrestamoHandler::validarContexto",
+            "cc": 1,
+            "loc": 7
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/PrestamoHandler.php",
+            "metodo": "PrestamoHandler::aplicar",
+            "cc": 1,
+            "loc": 8
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/DevolucionHandler.php",
+            "metodo": "DevolucionHandler::tipo",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/DevolucionHandler.php",
+            "metodo": "DevolucionHandler::situacionesPermitidas",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/DevolucionHandler.php",
+            "metodo": "DevolucionHandler::documentosAceptados",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/DevolucionHandler.php",
+            "metodo": "DevolucionHandler::reglas",
+            "cc": 1,
+            "loc": 7
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/DevolucionHandler.php",
+            "metodo": "DevolucionHandler::aplicar",
+            "cc": 1,
+            "loc": 10
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/AsignacionHandler.php",
+            "metodo": "AsignacionHandler::tipo",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/AsignacionHandler.php",
+            "metodo": "AsignacionHandler::situacionesPermitidas",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/AsignacionHandler.php",
+            "metodo": "AsignacionHandler::documentosAceptados",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/AsignacionHandler.php",
+            "metodo": "AsignacionHandler::reglas",
+            "cc": 1,
+            "loc": 6
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/AsignacionHandler.php",
+            "metodo": "AsignacionHandler::construir",
+            "cc": 1,
+            "loc": 9
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/AsignacionHandler.php",
+            "metodo": "AsignacionHandler::aplicar",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/CambioEstadoHandler.php",
+            "metodo": "CambioEstadoHandler::tipo",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/CambioEstadoHandler.php",
+            "metodo": "CambioEstadoHandler::situacionesPermitidas",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/CambioEstadoHandler.php",
+            "metodo": "CambioEstadoHandler::documentosAceptados",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/CambioEstadoHandler.php",
+            "metodo": "CambioEstadoHandler::reglas",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/CambioEstadoHandler.php",
+            "metodo": "CambioEstadoHandler::validarContexto",
+            "cc": 1,
+            "loc": 7
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/CambioEstadoHandler.php",
+            "metodo": "CambioEstadoHandler::construir",
+            "cc": 1,
+            "loc": 9
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/CambioEstadoHandler.php",
+            "metodo": "CambioEstadoHandler::aplicar",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/RegistroHandler.php",
+            "metodo": "RegistroHandler::tipo",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/RegistroHandler.php",
+            "metodo": "RegistroHandler::situacionesPermitidas",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/RegistroHandler.php",
+            "metodo": "RegistroHandler::documentosAceptados",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/RegistroHandler.php",
+            "metodo": "RegistroHandler::documentoObligatorio",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/HandlerBase.php",
+            "metodo": "HandlerBase::documentoObligatorio",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/HandlerBase.php",
+            "metodo": "HandlerBase::requiereAprobacion",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/HandlerBase.php",
+            "metodo": "HandlerBase::reglas",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/HandlerBase.php",
+            "metodo": "HandlerBase::validarContexto",
+            "cc": 1,
+            "loc": 2
+        },
+        {
+            "archivo": "app/Domain/Movimientos/Tipos/HandlerBase.php",
+            "metodo": "HandlerBase::seAplica",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/SituacionBien.php",
+            "metodo": "SituacionBien::__construct",
+            "cc": 1,
+            "loc": 8
+        },
+        {
+            "archivo": "app/Domain/Movimientos/SituacionBien.php",
+            "metodo": "SituacionBien::vacia",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Domain/Movimientos/SituacionBien.php",
+            "metodo": "SituacionBien::desdeBien",
+            "cc": 1,
+            "loc": 10
+        },
+        {
+            "archivo": "app/Domain/Movimientos/SituacionBien.php",
+            "metodo": "SituacionBien::comoAtributosDeBien",
+            "cc": 1,
+            "loc": 10
+        },
+        {
+            "archivo": "app/Domain/Movimientos/ProyectorSituacion.php",
+            "metodo": "ProyectorSituacion::__construct",
+            "cc": 1,
+            "loc": 2
+        },
+        {
+            "archivo": "app/Domain/Movimientos/ProyectorSituacion.php",
+            "metodo": "ProyectorSituacion::sincronizar",
+            "cc": 1,
+            "loc": 6
+        },
+        {
+            "archivo": "app/Http/Controllers/CorreccionController.php",
+            "metodo": "CorreccionController::store",
+            "cc": 1,
+            "loc": 6
+        },
+        {
+            "archivo": "app/Http/Controllers/BienController.php",
+            "metodo": "BienController::create",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Http/Controllers/BienController.php",
+            "metodo": "BienController::store",
+            "cc": 1,
+            "loc": 6
+        },
+        {
+            "archivo": "app/Http/Controllers/BienController.php",
+            "metodo": "BienController::edit",
+            "cc": 1,
+            "loc": 5
+        },
+        {
+            "archivo": "app/Http/Controllers/BienController.php",
+            "metodo": "BienController::update",
+            "cc": 1,
+            "loc": 14
+        },
+        {
+            "archivo": "app/Http/Controllers/BienController.php",
+            "metodo": "BienController::catalogos",
+            "cc": 1,
+            "loc": 7
+        },
+        {
+            "archivo": "app/Http/Controllers/BienController.php",
+            "metodo": "BienController::tiposDisponibles",
+            "cc": 1,
+            "loc": 7
+        },
+        {
+            "archivo": "app/Http/Controllers/Admin/AmbienteController.php",
+            "metodo": "AmbienteController::index",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Http/Controllers/Admin/AmbienteController.php",
+            "metodo": "AmbienteController::create",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Http/Controllers/Admin/AmbienteController.php",
+            "metodo": "AmbienteController::store",
+            "cc": 1,
+            "loc": 5
+        },
+        {
+            "archivo": "app/Http/Controllers/Admin/AmbienteController.php",
+            "metodo": "AmbienteController::edit",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Http/Controllers/Admin/AmbienteController.php",
+            "metodo": "AmbienteController::update",
+            "cc": 1,
+            "loc": 5
+        },
+        {
+            "archivo": "app/Http/Controllers/Admin/AmbienteController.php",
+            "metodo": "AmbienteController::validar",
+            "cc": 1,
+            "loc": 10
+        },
+        {
+            "archivo": "app/Http/Controllers/Admin/UsuarioController.php",
+            "metodo": "UsuarioController::index",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Http/Controllers/Admin/UsuarioController.php",
+            "metodo": "UsuarioController::create",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Http/Controllers/Admin/UsuarioController.php",
+            "metodo": "UsuarioController::store",
+            "cc": 1,
+            "loc": 6
+        },
+        {
+            "archivo": "app/Http/Controllers/Admin/UsuarioController.php",
+            "metodo": "UsuarioController::edit",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Http/Controllers/Admin/PersonalController.php",
+            "metodo": "PersonalController::index",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Http/Controllers/Admin/PersonalController.php",
+            "metodo": "PersonalController::create",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Http/Controllers/Admin/PersonalController.php",
+            "metodo": "PersonalController::store",
+            "cc": 1,
+            "loc": 5
+        },
+        {
+            "archivo": "app/Http/Controllers/Admin/PersonalController.php",
+            "metodo": "PersonalController::edit",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Http/Controllers/Admin/PersonalController.php",
+            "metodo": "PersonalController::validar",
+            "cc": 1,
+            "loc": 10
+        },
+        {
+            "archivo": "app/Http/Controllers/Auth/LoginController.php",
+            "metodo": "LoginController::mostrar",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Http/Controllers/Auth/LoginController.php",
+            "metodo": "LoginController::salir",
+            "cc": 1,
+            "loc": 7
+        },
+        {
+            "archivo": "app/Http/Controllers/ImportacionController.php",
+            "metodo": "ImportacionController::index",
+            "cc": 1,
+            "loc": 5
+        },
+        {
+            "archivo": "app/Http/Controllers/ImportacionController.php",
+            "metodo": "ImportacionController::plantilla",
+            "cc": 1,
+            "loc": 7
+        },
+        {
+            "archivo": "app/Http/Controllers/ImportacionController.php",
+            "metodo": "ImportacionController::show",
+            "cc": 1,
+            "loc": 5
+        },
+        {
+            "archivo": "app/Http/Controllers/ReporteController.php",
+            "metodo": "ReporteController::filtros",
+            "cc": 1,
+            "loc": 9
+        },
+        {
+            "archivo": "app/Http/Controllers/AlertaController.php",
+            "metodo": "AlertaController::__invoke",
+            "cc": 1,
+            "loc": 8
+        },
+        {
+            "archivo": "app/Http/Controllers/PerfilController.php",
+            "metodo": "PerfilController::editar",
+            "cc": 1,
+            "loc": 3
+        },
+        {
+            "archivo": "app/Http/Controllers/PerfilController.php",
+            "metodo": "PerfilController::actualizar",
+            "cc": 1,
+            "loc": 11
+        },
+        {
+            "archivo": "app/Policies/BienPolicy.php",
+            "metodo": "BienPolicy::update",
+            "cc": 1,
+            "loc": 3
+        }
+    ]
+}
