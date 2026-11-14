@@ -1,0 +1,90 @@
+# Integración continua: estilo de código, métricas propias y pruebas automatizadas.
+name: CI
+
+on:
+  push:
+    branches: [main, develop, 'feature/**']
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  calidad:
+    name: Estilo y métricas
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: mbstring, intl, gd, zip, pdo_sqlite
+          coverage: none
+      - name: Instalar dependencias
+        run: composer install --no-interaction --prefer-dist --no-progress
+      - name: Convenciones de código (Laravel Pint, PSR-12)
+        run: vendor/bin/pint --test
+      - name: Complejidad ciclomática (herramienta propia; falla si un método supera 20)
+        run: php tools/metricas.php
+
+  pruebas:
+    name: Pruebas PHP ${{ matrix.php }} (SQLite)
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: ['8.3', '8.4']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mbstring, intl, gd, zip, pdo_sqlite
+          coverage: pcov
+      - name: Instalar dependencias
+        run: composer install --no-interaction --prefer-dist --no-progress
+      - name: Preparar entorno
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+      - name: Pruebas unitarias, de integración, aceptación y regresión (con cobertura)
+        run: vendor/bin/phpunit --coverage-text --coverage-clover coverage.xml --log-junit junit.xml
+      - name: Guardar reportes
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reportes-pruebas-php${{ matrix.php }}
+          path: |
+            coverage.xml
+            junit.xml
+
+  pruebas-mariadb:
+    name: Pruebas en MariaDB (como XAMPP)
+    runs-on: ubuntu-latest
+    services:
+      mariadb:
+        image: mariadb:10.11
+        env:
+          MARIADB_DATABASE: bienes_test
+          MARIADB_ROOT_PASSWORD: secreto
+        ports: ['3306:3306']
+        options: --health-cmd="healthcheck.sh --connect --innodb_initialized" --health-interval=10s --health-timeout=5s --health-retries=5
+    env:
+      DB_CONNECTION: mysql
+      DB_HOST: 127.0.0.1
+      DB_PORT: 3306
+      DB_DATABASE: bienes_test
+      DB_USERNAME: root
+      DB_PASSWORD: secreto
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: mbstring, intl, gd, zip, pdo_mysql
+          coverage: none
+      - run: composer install --no-interaction --prefer-dist --no-progress
+      - run: |
+          cp .env.example .env
+          php artisan key:generate
+      - name: Migraciones y datos de demostración
+        run: php artisan migrate:fresh --seed --force
+      - name: Pruebas sobre MariaDB
+        run: php artisan test
