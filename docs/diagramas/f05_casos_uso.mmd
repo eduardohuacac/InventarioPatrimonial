@@ -1,0 +1,22 @@
+flowchart LR
+  ENC(["👤 Encargado"]) 
+  DIR(["👤 Director/a"])
+  DOC(["👤 Personal (Consulta)"])
+  ADM(["👤 Administrador"])
+  subgraph SIS[Sistema de control de bienes patrimoniales]
+    U1((Iniciar sesión<br/>RF01))
+    U2((Registrar bien<br/>RF03))
+    U3((Buscar bien y<br/>ver historial RF04-05))
+    U4((Registrar movimiento<br/>con sustento RF06))
+    U5((Solicitar baja<br/>o corrección RF07-08))
+    U6((Aprobar o rechazar<br/>RF07-08))
+    U7((Importar depurados<br/>RF09))
+    U8((Reportes y alertas<br/>RF10-11))
+    U9((Mis bienes<br/>RF12))
+    U10((Gestionar usuarios,<br/>ambientes, personal RF02))
+    U11((Consultar auditoría<br/>RF13))
+  end
+  ENC --- U1 & U2 & U3 & U4 & U5 & U7 & U8
+  DIR --- U1 & U3 & U6 & U8 & U11
+  DOC --- U1 & U9
+  ADM --- U1 & U10 & U11

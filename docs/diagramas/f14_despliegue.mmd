@@ -1,0 +1,12 @@
+flowchart LR
+  subgraph PC[PC del laboratorio · Windows + XAMPP]
+    NAV[Navegador web]
+    subgraph SRVR[Servidor local]
+      PHP[PHP 8.3 + Laravel<br/>php artisan serve :8000]
+      DBM[(MySQL/MariaDB<br/>bienes_patrimoniales)]
+      ST[(storage/app/private)]
+    end
+  end
+  NAV -- HTTP localhost --> PHP
+  PHP -- SQL --> DBM
+  PHP --- ST

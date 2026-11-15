@@ -1,0 +1,6 @@
+flowchart LR
+  A["📥 Product Backlog<br/>HU01-HU10 + tareas de documentación"] --> B["📋 Sprint Backlog<br/>(meta del sprint)"]
+  B --> C["🔧 En progreso<br/>(máx. 3 por persona)"]
+  C --> D["🔍 En revisión<br/>(Pull Request abierto)"]
+  D --> E["✅ Hecho<br/>(cumple el DoD)"]
+  D -. cambios pedidos .-> C

@@ -1,0 +1,11 @@
+flowchart LR
+  A([Llega un bien<br/>por compra o donación]) --> B[Se guarda sin código<br/>individual]
+  B --> C{¿Alguien lo anota?}
+  C -- A veces --> D[Hoja1 del Excel SIGA 2016<br/>3 registros, sin responsable]
+  C -- No --> E[Sin rastro]
+  D --> F[Traslado o préstamo<br/>de palabra]
+  E --> F
+  F --> G[Sin historial<br/>ni responsable claro]
+  G --> H([Inventario anual<br/>con datos inciertos])
+  style G fill:#FDE8E8,stroke:#B42318
+  style H fill:#FDE8E8,stroke:#B42318

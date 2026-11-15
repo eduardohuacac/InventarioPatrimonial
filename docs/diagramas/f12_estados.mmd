@@ -1,0 +1,12 @@
+stateDiagram-v2
+  [*] --> activo : registro
+  activo --> prestado : préstamo
+  prestado --> activo : devolución
+  activo --> no_ubicado : verificación "no encontrado"
+  prestado --> no_ubicado : verificación "no encontrado"
+  no_ubicado --> activo : verificación "encontrado"
+  activo --> en_tramite_baja : solicitud de baja
+  no_ubicado --> en_tramite_baja : solicitud de baja
+  en_tramite_baja --> activo : Dirección rechaza
+  en_tramite_baja --> dado_de_baja : baja con resolución
+  dado_de_baja --> [*]

@@ -1,0 +1,43 @@
+classDiagram
+  direction TB
+  class RegistroMovimientoService {
+    +registrar()
+    +registrarCorreccion()
+    +decidir()
+  }
+  class FabricaHandlers {
+    +para(tipo)
+  }
+  class TipoMovimientoHandler {
+    <<interface>>
+    +validarContexto()
+    +construir()
+    +aplicar()
+  }
+  class HandlerBase
+  class PrestamoHandler
+  class DevolucionHandler
+  class TrasladoHandler
+  class CorreccionHandler
+  class ProyectorSituacion {
+    +proyectar()
+  }
+  class SituacionBien {
+    <<value object>>
+  }
+  class Bien
+  class Movimiento {
+    <<solo inserción>>
+  }
+  class Aprobacion
+  RegistroMovimientoService --> FabricaHandlers
+  RegistroMovimientoService --> ProyectorSituacion
+  FabricaHandlers ..> TipoMovimientoHandler : crea
+  TipoMovimientoHandler <|.. HandlerBase
+  HandlerBase <|-- PrestamoHandler
+  HandlerBase <|-- DevolucionHandler
+  HandlerBase <|-- TrasladoHandler
+  HandlerBase <|-- CorreccionHandler
+  ProyectorSituacion --> SituacionBien
+  Bien "1" --> "*" Movimiento
+  Movimiento "1" --> "0..1" Aprobacion

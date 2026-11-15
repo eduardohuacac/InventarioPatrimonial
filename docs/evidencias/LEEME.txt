@@ -1,0 +1,2 @@
+Guardar aquí, con nombre y fecha: capturas del tablero de Trello al inicio y cierre de cada sprint, de GitHub Actions (ejecución exitosa), de las ramas y la etiqueta, y de la prueba de aceptación.
+Ejemplo de nombre: 2026-11-27_trello_cierre_S6.png

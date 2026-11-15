@@ -1,0 +1,22 @@
+sequenceDiagram
+  actor E as Encargado
+  participant C as Controlador
+  participant S as Servicio de<br/>movimientos
+  participant H as PrestamoHandler
+  participant P as Proyector
+  participant B as MySQL
+  E->>C: Registrar préstamo + papeleta
+  C->>S: registrar(bien, PRESTAMO)
+  S->>B: inicia transacción y bloquea el bien
+  S->>P: situación vigente
+  P-->>S: activo, ambiente, responsable
+  S->>H: validarContexto()
+  alt sin papeleta o bien no activo
+    H-->>S: ReglaNegocioException
+    S->>B: rollback
+    S-->>E: rechazado (CP03)
+  else válido
+    S->>B: INSERT documento y movimiento
+    S->>B: auditoría + commit
+    S-->>E: préstamo registrado
+  end

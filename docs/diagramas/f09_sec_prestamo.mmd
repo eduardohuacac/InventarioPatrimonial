@@ -1,0 +1,26 @@
+sequenceDiagram
+  actor E as Encargado
+  participant C as MovimientoController
+  participant S as RegistroMovimientoService
+  participant F as FabricaHandlers
+  participant H as PrestamoHandler
+  participant P as ProyectorSituacion
+  participant DB as MySQL
+  E->>C: POST préstamo (datos + papeleta)
+  C->>S: registrar(bien, PRESTAMO, datos)
+  S->>DB: begin + bloqueo de fila del bien
+  S->>F: para(PRESTAMO)
+  F-->>S: PrestamoHandler
+  S->>P: proyectar(movimientos del bien)
+  P-->>S: situación vigente
+  S->>H: validarContexto(situación, datos)
+  alt sin papeleta o bien no activo
+    H-->>S: ReglaNegocioException
+    S->>DB: rollback
+    S-->>E: error (CP03)
+  else válido
+    S->>DB: INSERT documento + INSERT movimiento
+    S->>DB: actualizar situación y auditoría
+    S->>DB: commit
+    S-->>E: préstamo registrado
+  end

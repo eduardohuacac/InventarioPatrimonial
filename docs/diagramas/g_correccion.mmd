@@ -1,0 +1,16 @@
+sequenceDiagram
+  actor E as Encargado
+  actor D as Director/a
+  participant S as Servicio de<br/>movimientos
+  participant B as MySQL
+  E->>S: Corregir movimiento (motivo)
+  S->>B: INSERT movimiento CORRECCION
+  S-->>E: muestra operaciones posteriores
+  D->>S: Decidir (aprobar o rechazar)
+  S->>B: INSERT aprobación (sin UPDATE)
+  alt Aprobada
+    S->>B: recalcula sin el movimiento anulado
+    S-->>D: historial con el original tachado
+  else Rechazada
+    S-->>D: situación sin cambios
+  end

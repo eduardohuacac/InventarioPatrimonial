@@ -1,0 +1,11 @@
+flowchart LR
+  subgraph WEB[Aplicación Laravel]
+    UI[Vistas Blade] --> CTRL[Controladores + Middleware]
+    CTRL --> SRV[Servicios]
+    SRV --> DOM[Dominio: Handlers y Proyector]
+    SRV --> ORM[Modelos Eloquent]
+    SRV --> LIB1[laravel-dompdf]
+    SRV --> LIB2[phpspreadsheet]
+  end
+  ORM --> BD[(MySQL/MariaDB)]
+  SRV --> FS[(storage/app/private)]

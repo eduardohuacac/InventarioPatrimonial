@@ -1,0 +1,26 @@
+flowchart TB
+  subgraph P[Presentación]
+    V[Vistas Blade + CSS propio<br/>39 vistas]
+    C[15 controladores<br/>Middleware: EnsurePerfil, SecurityHeaders,<br/>EnsureUsuarioActivo]
+  end
+  subgraph A[Aplicación / Servicios]
+    S1[RegistroBienService]
+    S2[RegistroMovimientoService]
+    S3[Importación: Diagnóstico R1-R5,<br/>ImportadorDepurados]
+    S4[Reportes, Alertas, Indicadores]
+  end
+  subgraph D[Dominio]
+    H[10 Handlers de movimiento<br/>Strategy + FabricaHandlers]
+    PR[ProyectorSituacion + SituacionBien]
+  end
+  subgraph R[Persistencia]
+    M[11 modelos Eloquent<br/>SoloInsercion · Auditable]
+    DB[(MySQL / MariaDB)]
+  end
+  V --> C --> S1 & S2 & S3 & S4
+  S2 --> H
+  S2 --> PR
+  S1 --> M
+  S2 --> M
+  S3 --> M
+  M --> DB

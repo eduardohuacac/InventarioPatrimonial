@@ -1,0 +1,16 @@
+flowchart LR
+  subgraph ENC[Encargado de patrimonio]
+    A[1. Registra el bien<br/>≤ 5 días hábiles] --> B[2. Asigna ambiente<br/>y responsable]
+    B --> C[3. Traslado, préstamo<br/>o devolución con papeleta]
+    C --> D[4. Cambio de estado<br/>o verificación física]
+    D --> E[5. Solicita baja<br/>o corrección]
+    G[7. Revisión mensual:<br/>vencidos y sin verificar]
+  end
+  subgraph DIR[Director/a]
+    F{6. ¿Aprueba?}
+  end
+  E --> F
+  F -- Sí --> H[Baja con resolución<br/>o corrección aplicada]
+  F -- No, con observación --> D
+  H --> I([8. Cierre al 31/12 y<br/>registro SIGA hasta 28/02])
+  G --> I

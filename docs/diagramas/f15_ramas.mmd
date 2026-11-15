@@ -1,0 +1,23 @@
+gitGraph
+  commit id: "inicio"
+  branch develop
+  checkout develop
+  branch feature/modelo-datos
+  commit id: "feat"
+  checkout develop
+  merge feature/modelo-datos
+  branch feature/movimientos
+  commit id: "feat "
+  checkout develop
+  merge feature/movimientos
+  branch refactor/metricas
+  commit id: "refactor"
+  checkout develop
+  merge refactor/metricas
+  checkout main
+  merge develop tag: "v1.0.0"
+  checkout develop
+  branch feature/docs-cap1
+  commit id: "docs"
+  checkout develop
+  merge feature/docs-cap1

@@ -1,0 +1,35 @@
+classDiagram
+  class TipoMovimientoHandler {
+    <<interface>>
+    +tipo() TipoMovimiento
+    +situacionesPermitidas() array
+    +documentosAceptados() array
+    +requiereAprobacion() bool
+    +validarContexto(SituacionBien, datos)
+    +construir(SituacionBien, datos) array
+    +aplicar(SituacionBien, Movimiento) SituacionBien
+  }
+  class HandlerBase
+  class PrestamoHandler
+  class DevolucionHandler
+  class TrasladoHandler
+  class CorreccionHandler
+  class FabricaHandlers { +para(TipoMovimiento) TipoMovimientoHandler }
+  class SituacionBien { <<value object>> +ambienteId +responsableId +estadoId +situacion }
+  class ProyectorSituacion { +proyectar(movimientos) SituacionBien
+    +sincronizar(Bien) Bien }
+  class RegistroMovimientoService { +registrar() +registrarCorreccion() +decidir() +posteriores() }
+  class Bien
+  class Movimiento { <<solo inserción>> }
+  class Aprobacion
+  TipoMovimientoHandler <|.. HandlerBase
+  HandlerBase <|-- PrestamoHandler
+  HandlerBase <|-- DevolucionHandler
+  HandlerBase <|-- TrasladoHandler
+  HandlerBase <|-- CorreccionHandler
+  FabricaHandlers ..> TipoMovimientoHandler : crea
+  RegistroMovimientoService --> FabricaHandlers
+  RegistroMovimientoService --> ProyectorSituacion
+  ProyectorSituacion --> SituacionBien
+  Bien "1" --> "*" Movimiento
+  Movimiento "1" --> "0..1" Aprobacion

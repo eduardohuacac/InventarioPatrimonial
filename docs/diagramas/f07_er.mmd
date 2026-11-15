@@ -1,0 +1,49 @@
+erDiagram
+  USERS ||--o{ MOVIMIENTOS : registra
+  USERS ||--o{ AUDITORIAS : genera
+  PERSONAL ||--o{ BIENES : "responsable actual"
+  AMBIENTES ||--o{ BIENES : "ubica"
+  ESTADOS_CONSERVACION ||--o{ BIENES : "califica"
+  BIENES ||--o{ MOVIMIENTOS : "historial"
+  DOCUMENTOS ||--o{ MOVIMIENTOS : "sustenta"
+  MOVIMIENTOS ||--o| APROBACIONES : "decide"
+  MOVIMIENTOS ||--o| MOVIMIENTOS : "anula"
+  LOTES_IMPORTACION ||--o{ BITACORA_MIGRACION : "registra"
+  BIENES {
+    bigint id PK
+    string codigo_patrimonial UK
+    string descripcion
+    string situacion
+    date fecha_ultima_verificacion
+    string id_origen
+  }
+  MOVIMIENTOS {
+    bigint id PK
+    bigint bien_id FK
+    string tipo
+    date fecha
+    bigint documento_id FK
+    bigint movimiento_anulado_id FK
+    text motivo
+    bool requiere_aprobacion
+    timestamp registrado_en
+  }
+  DOCUMENTOS {
+    bigint id PK
+    string tipo
+    string numero
+    string archivo_path
+  }
+  APROBACIONES {
+    bigint id PK
+    bigint movimiento_id FK
+    string decision
+    bigint decidido_por FK
+  }
+  PERSONAL { bigint id PK }
+  AMBIENTES { bigint id PK }
+  ESTADOS_CONSERVACION { bigint id PK }
+  USERS { bigint id PK }
+  AUDITORIAS { bigint id PK }
+  LOTES_IMPORTACION { bigint id PK }
+  BITACORA_MIGRACION { bigint id PK }
