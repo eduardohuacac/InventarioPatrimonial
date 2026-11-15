@@ -1,0 +1,11 @@
+flowchart BT
+  P["PROBLEMA CENTRAL<br/>La I.E. no sabe con certeza qué bienes tiene,<br/>dónde están, en qué estado y quién responde"]:::c
+  C1["Causa 1<br/>Sin procedimiento de registro<br/>(quién, plazo, sustento)"]:::k --> P
+  C2["Causa 2<br/>Solo existe un catálogo SIGA 2016,<br/>no un inventario"]:::k --> P
+  C3["Causa 3<br/>No se registran traslados,<br/>préstamos ni cambios de responsable"]:::k --> P
+  P --> E1["Efecto 1<br/>Información no confiable"]:::e
+  P --> E2["Efecto 2<br/>Decisiones de mantenimiento,<br/>reposición y distribución afectadas"]:::e
+  P --> E3["Efecto 3<br/>Inventario anual (31/12 → SIGA 28/02)<br/>con datos inciertos"]:::e
+  classDef c fill:#1F3A5F,color:#fff,stroke:#1F3A5F
+  classDef k fill:#FFF4E0,stroke:#C77700
+  classDef e fill:#FDE8E8,stroke:#B42318

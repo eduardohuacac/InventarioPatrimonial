@@ -1,0 +1,21 @@
+sequenceDiagram
+  actor E as Encargado
+  participant I as Controlador
+  participant G as Diagnóstico<br/>R1 a R5
+  participant M as Importador
+  participant B as MySQL
+  E->>I: Sube Excel/CSV (paso 1)
+  I->>G: filas leídas
+  G-->>E: diagnóstico (no guarda nada)
+  E->>I: Confirma (paso 2)
+  I->>M: importar()
+  M->>B: inicia transacción
+  M->>B: verifica hash SHA-256
+  M->>B: INSERT bienes, movimientos, bitácora
+  M->>M: Cargados = Filas − Excluidas − (Fusionadas − Grupos)
+  alt no cuadra
+    M->>B: rollback
+  else cuadra
+    M->>B: commit
+  end
+  M-->>E: reporte de reconciliación
