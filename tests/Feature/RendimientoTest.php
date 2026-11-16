@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Models\Ambiente;
+use App\Models\EstadoConservacion;
 use App\Models\Personal;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
@@ -22,7 +23,7 @@ class RendimientoTest extends TestCase
         $ambientes = Ambiente::factory()->count(20)->create()->pluck('id');
         $personas = Personal::factory()->count(40)->create()->pluck('id');
         // En MySQL/MariaDB los ids no se reinician entre pruebas: no asumir que empiezan en 1.
-        $estados = \App\Models\EstadoConservacion::orderBy('id')->pluck('id');
+        $estados = EstadoConservacion::orderBy('id')->pluck('id');
 
         $ahora = now();
         foreach (array_chunk(range(1, 5000), 500) as $bloque) {
