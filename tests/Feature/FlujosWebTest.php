@@ -5,6 +5,7 @@ namespace Tests\Feature;
 use App\Enums\Situacion;
 use App\Models\Ambiente;
 use App\Models\Bien;
+use App\Models\EstadoConservacion;
 use App\Models\Movimiento;
 use App\Models\Personal;
 use App\Models\User;
@@ -60,7 +61,7 @@ class FlujosWebTest extends TestCase
             'descripcion' => 'Pizarra interactiva',
             'ambiente_id' => Ambiente::first()->id,
             'responsable_id' => Personal::first()->id,
-            'estado_id' => 1,
+            'estado_id' => EstadoConservacion::where('nombre', 'bueno')->value('id'),
             'fecha_ultima_verificacion' => today()->toDateString(),
         ]);
         $r->assertRedirect('/bienes/952282850099');

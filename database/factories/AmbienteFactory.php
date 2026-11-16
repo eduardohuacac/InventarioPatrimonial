@@ -13,7 +13,7 @@ class AmbienteFactory extends Factory
     public function definition(): array
     {
         return [
-            'nombre' => 'Aula '.fake()->unique()->numberBetween(100, 999),
+            'nombre' => 'Ambiente de prueba '.fake()->unique()->numberBetween(1, 99999),
             'tipo' => 'aula',
             'piso' => (string) fake()->numberBetween(1, 3),
             'activo' => true,
